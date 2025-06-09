@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.LoginController"
+      prefWidth="300" prefHeight="200">
+
+    <Label text="Connexion à la messagerie" />
+    <TextField fx:id="usernameField" promptText="Nom d'utilisateur" prefWidth="250" />
+    <PasswordField fx:id="passwordField" promptText="Mot de passe" prefWidth="250" />
+    <Button text="Se connecter" onAction="#handleLogin" />
+</VBox>

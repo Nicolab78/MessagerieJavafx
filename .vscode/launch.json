@@ -3,10 +3,12 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Lancer JavaFX",
+      "name": "Lancer JavaFX (Software Render)",
       "request": "launch",
       "mainClass": "App",
-      "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml"
+      "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml -Dprism.order=sw -Djava.library.path=\"C:/javafx-sdk-21.0.2/bin\""
+
+
     }
   ]
 }
