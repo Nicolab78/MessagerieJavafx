@@ -1,6 +1,6 @@
 package controller;
 
-import dao.impl.UserDAOImpl;
+import dao.UserDAO; // Remplacer l'import
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +29,7 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        UserDAOImpl userDAO = new UserDAOImpl();
+        UserDAO userDAO = new UserDAO(); // Utiliser UserDAO directement
         User user = userDAO.findByUsername(username);
 
         if (user != null && user.getPassword().equals(password)) {
