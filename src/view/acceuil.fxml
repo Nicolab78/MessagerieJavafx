@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.AccueilController"
+            prefWidth="600" prefHeight="400">
+
+    <top>
+        <Label text="Bienvenue dans la messagerie"
+               style="-fx-font-size: 18px; -fx-padding: 10px;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <Button text="Voir les messages" onAction="#handleVoirMessages" prefWidth="200"/>
+            <Button text="Envoyer un message" onAction="#handleEnvoyerMessage" prefWidth="200"/>
+            <Button text="Déconnexion" onAction="#handleDeconnexion" prefWidth="200"/>
+        </VBox>
+    </center>
+</BorderPane>

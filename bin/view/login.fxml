@@ -11,4 +11,9 @@
     <TextField fx:id="usernameField" promptText="Nom d'utilisateur" prefWidth="250" />
     <PasswordField fx:id="passwordField" promptText="Mot de passe" prefWidth="250" />
     <Button text="Se connecter" onAction="#handleLogin" />
+
+
+
+    <Label fx:id="messageLabel" text="" />
+
 </VBox>
